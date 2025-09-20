@@ -6,11 +6,15 @@ int main() {
     
     // Declarações de variáveis 
     //Rio Janeiro
-    float habitantes_rj = 6.211;
+    float habitantes_rj = 6.211; //float declara numeros com mais de uma casa decimal
     float area_rj = 1.200;
     float pib_rj = 359.64;
-    int turisticos_rj = 22;
-//Sao paulo
+    int turisticos_rj = 22;// int declara numeros inteiros
+    
+    //Separação por Estados.
+    
+    //Sao paulo 
+    
     float habitantes_sp = 21.5;
     float area_sp = 8.051;
     float pib_sp = 3.5;
@@ -22,13 +26,14 @@ int main() {
     float area_b = 331.354;
     float pib_b = 41.818 ;
     int turisticos_b = 20;
-    
-    printf(" R - Rio de Janeiro\n S - São Paulo\n B - Belo Horizonte\n");
+    // a funçao do printf é exibir em tela as informaçoes das variaveis
+    printf(" R - Rio de Janeiro\n S - São Paulo\n B - Belo Horizonte\n");// \n pula linha para que nao fique tudo em uma mesma linha
     printf("Digite a sigla do estado: ");
-    scanf(" %c", &sigla);
-    
+    scanf(" %c", &sigla);//o scanf lê o caractere que o usuário digita no teclado e armazena (guarda) esse caractere na variável
     // Se a sigla for 'R' ou 'r'
-    if (sigla == 'R' || sigla == 'r') {
+    if (sigla == 'R' || sigla == 'r') {//a sigla corresponde ao que foi digitado la no char, no caso aqui "R" de Rio de Janeiro.
+      //o "if" se as siglas corresponrem ele toma as informaçoes e pritam em tela  
+        //O printf printa a tela
         printf("\nVoce digitou a sigla do Rio de Janeiro!\n");
         printf("Numero total de habitantes: %.2f milhões\n", habitantes_rj);
         printf("Total da Area em km²: %.2f\n", area_rj);
@@ -38,7 +43,7 @@ int main() {
         
     } 
     // Se a sigla for 'S' ou 's'
-    else if (sigla == 'S' || sigla == 's') {
+    else if (sigla == 'S' || sigla == 's') {//else if - se  for a sigla digitada ela retorna com as informaçoes 
         printf("\nVoce digitou a sigla de Sao Paulo!\n");
         printf("Numero total de habitantes: %.2f milhões\n", habitantes_sp);
         printf("Total da Area em km²: %.2f\n", area_sp);
@@ -66,4 +71,5 @@ int main() {
     }
 
     return 0;
+
 }
